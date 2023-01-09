@@ -62,6 +62,7 @@ export const SubHeader = styled.h6`
 
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
     font-size: 1.3rem;
+    margin-bottom: 0.5rem;
   }
 `;
 
@@ -94,6 +95,7 @@ export const StyledInput = styled.input`
   }
 
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
+    margin: 0.7rem;
     height: 2rem;
     width: 10rem;
     font-size: 1.2rem;
@@ -146,7 +148,8 @@ export const StyledButton = styled.button`
 
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
     font-size: 1.2rem;
-    margin: 0.2rem 1rem;
+    margin: 0.3rem 1rem;
+    margin-bottom: 1rem;
     padding: 0.4rem 0;
     border-radius: 10px;
   }
@@ -154,20 +157,16 @@ export const StyledButton = styled.button`
 
 export const StyledImage = styled.img`
   width: 180px;
-  margin: 1rem;
 
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
-    margin: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.screens.md}) {
     width: 155px;
-    margin: 0;
   }
 
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
-    width: 140px;
-    margin: 0;
+    width: 130px;
   }
 `;
 

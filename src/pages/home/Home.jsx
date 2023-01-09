@@ -7,8 +7,10 @@ import homeSvg from "../../assets/home.svg";
 import notFound from "../../assets/notFound.png";
 
 const Home = () => {
-  const APP_ID = process.env.REACT_APP_APP_ID;
-  const APP_KEY = process.env.REACT_APP_APP_KEY;
+  // const APP_ID = process.env.REACT_APP_APP_ID;
+  // const APP_KEY = process.env.REACT_APP_APP_KEY;
+  const APP_ID = "2baa2bb4";
+  const APP_KEY = "370056a3dfbc9d3a4ff29fce083ab8f2";
 
   const [query, setQuery] = useState(null);
   const [selectedMeal, setSelectedMeal] = useState(null);

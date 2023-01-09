@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import styled from "styled-components";
 import LoginContainer, {
   FormContainer,
+  Header,
   StyledButton,
   StyledForm,
   StyledInput,
@@ -9,10 +10,10 @@ import LoginContainer, {
 
 export const RegisterContainer = styled(LoginContainer)`
   height: calc(100vh - 148.6px);
-  /* height: 100vh; */
 `;
 
 export const RegisterFormContainer = styled(FormContainer)``;
+
 export const RegisterForm = styled(StyledForm)`
   margin-top: 1rem;
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
@@ -22,11 +23,17 @@ export const RegisterForm = styled(StyledForm)`
   }
 `;
 
+export const RegisterHeader = styled(Header)`
+  @media (max-width: ${({ theme }) => theme.screens.sm}) {
+    font-size: 1.9rem;
+  }
+`;
+
 export const RegisterInput = styled(StyledInput)`
   height: 2.7rem;
   font-size: 1.5rem;
   width: 16rem;
-  margin: 1.2rem;
+  margin: 0.8rem;
 
   @media (max-width: ${({ theme }) => theme.screens.lg}) {
     height: 2.6rem;
@@ -43,12 +50,13 @@ export const RegisterInput = styled(StyledInput)`
   @media (max-width: ${({ theme }) => theme.screens.sm}) {
     height: 2rem;
     width: 10rem;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
   }
 `;
 
 export const RegisterButton = styled(StyledButton)`
-  margin: 2rem 1rem;
+  margin: 0.6rem 1rem;
+  margin-bottom: 1.1rem;
 `;
 
 export const SignInLink = styled(Link)`
