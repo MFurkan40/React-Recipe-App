@@ -1,3 +1,105 @@
+# Recipe App
+
+## Table of contents
+
+- [Recipe App](#recipe-app)
+  - [Table of contents](#table-of-contents)
+  - [Overview](#overview)
+    - [Description](#description)
+    - [Project Skeleton](#project-skeleton)
+    - [Screenshot](#screenshot)
+    - [Links](#links)
+    - [Built with](#built-with)
+- [Getting Started with Create React App](#getting-started-with-create-react-app)
+  - [Available Scripts](#available-scripts)
+    - [`npm start`](#npm-start)
+    - [`npm test`](#npm-test)
+    - [`npm run build`](#npm-run-build)
+    - [`npm run eject`](#npm-run-eject)
+  - [Learn More](#learn-more)
+    - [Code Splitting](#code-splitting)
+    - [Analyzing the Bundle Size](#analyzing-the-bundle-size)
+    - [Making a Progressive Web App](#making-a-progressive-web-app)
+    - [Advanced Configuration](#advanced-configuration)
+    - [Deployment](#deployment)
+    - [`npm run build` fails to minify](#npm-run-build-fails-to-minify)
+
+## Overview
+
+### Description
+
+React was used in this project. Styled component, axios and react router router dom were used as library.
+
+To test by entering the login page with a private router;
+
+Username: user
+Password: test123
+
+### Project Skeleton
+
+```
+Recipe App (folder)
+       public(folder)
+           |----index.html
+       src (folder)
+           |----index.js
+           |----app.js
+           assets (folder)
+           components (folder)
+                |----cards (folder)
+                        |----Card.jsx
+                        |----Card.style.jsx
+                |----globalStyled (folder)
+                        |----Flex.style.jsx
+                        |----GlobalStyle.jsx
+                |----header (folder)
+                        |----Header.jsx
+                        |----Header.style.jsx
+                |----nav (folder)
+                        |----Navbar.jsx
+                        |----Navbar.styled.jsx
+           pages (folder)
+                |----about (folder)
+                        |----About.jsx
+                        |----About.style.jsx
+                |----detail (folder)
+                        |----Detail.jsx
+                        |----Detail.style.jsx
+                |----home (folder)
+                        |----Home.jsx
+                        |----Home.style.jsx
+                |----login (folder)
+                        |----Login.jsx
+                        |----Login.styled.jsx
+                |----register (folder)
+                        |----Register.jsx
+                        |----Register.styled.jsx
+           pages (folder)
+                |----AppRouter.jsx
+                |----PrivateRouter.jsx
+                |----PrivateRouter2.jsx
+```
+
+### Screenshot
+
+<p align="center">
+<a href="https://react-recipe-app-001.netlify.app/"><img src="recipe-app.gif" alt="screenshot" width="100%"></a>
+</p>
+
+### Links
+
+- Username: user
+- Password: test123
+
+- Live: [Website Link](https://react-recipe-app-001.netlify.app/)
+
+### Built with
+
+- REACT.JS
+- JAVASCRİPT
+- HTML5
+- CSS3
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

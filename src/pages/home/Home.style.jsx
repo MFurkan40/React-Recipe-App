@@ -7,6 +7,10 @@ const ImgDiv = styled.div`
   height: calc(100vh - 400px);
 `;
 
+export const HomeDiv = styled.div`
+  height: 100%;
+`;
+
 export const HomeImg = styled.img`
   width: 80%;
   max-width: 750px;

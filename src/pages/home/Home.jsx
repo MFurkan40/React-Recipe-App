@@ -2,7 +2,12 @@ import { useState } from "react";
 import axios from "axios";
 import Header from "../../components/header/Header";
 import Cards from "../../components/cards/Cards";
-import ImgDiv, { HeaderText, HomeImg, NotFoundImg } from "./Home.style";
+import ImgDiv, {
+  HeaderText,
+  HomeDiv,
+  HomeImg,
+  NotFoundImg,
+} from "./Home.style";
 import homeSvg from "../../assets/home.svg";
 import notFound from "../../assets/notFound.png";
 
@@ -41,7 +46,7 @@ const Home = () => {
 
   if (error) {
     return (
-      <div>
+      <HomeDiv>
         <Header
           setQuery={setQuery}
           setSelectedMeal={setSelectedMeal}
@@ -54,11 +59,11 @@ const Home = () => {
             <NotFoundImg src={notFound} />
           </ImgDiv>
         </>
-      </div>
+      </HomeDiv>
     );
   } else if (recipes?.length === 0 && !selectedMeal) {
     return (
-      <div>
+      <HomeDiv>
         <Header
           setQuery={setQuery}
           setSelectedMeal={setSelectedMeal}
@@ -74,11 +79,11 @@ const Home = () => {
             <NotFoundImg src={notFound} />
           </ImgDiv>
         </>
-      </div>
+      </HomeDiv>
     );
   } else if (recipes?.length === 0 && selectedMeal) {
     return (
-      <div>
+      <HomeDiv>
         <Header
           setQuery={setQuery}
           setSelectedMeal={setSelectedMeal}
@@ -91,11 +96,11 @@ const Home = () => {
             <NotFoundImg src={notFound} />
           </ImgDiv>
         </>
-      </div>
+      </HomeDiv>
     );
   } else {
     return (
-      <div>
+      <HomeDiv>
         <Header
           setQuery={setQuery}
           setSelectedMeal={setSelectedMeal}
@@ -110,7 +115,7 @@ const Home = () => {
         )}
 
         {recipes?.length > 0 && <Cards recipes={recipes} />}
-      </div>
+      </HomeDiv>
     );
   }
 };

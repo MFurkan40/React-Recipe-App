@@ -16,14 +16,11 @@ body{
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
-    height: 100%;
+    min-height: 100vh;
     font-size: 1.5rem;
-    overflow-y: hidden;
     z-index: -100;
-    @media (max-height: 700px) {
-    overflow: scroll;
-  }
-
+    #root{
+      height: 100%;
+    }
 }
-
 `;

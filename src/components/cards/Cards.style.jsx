@@ -5,8 +5,6 @@ export const MainContainer = styled(Flex)`
   flex-direction: row;
   gap: 1.5rem;
   margin-top: 2.5rem;
-  overflow-y: scroll;
-  height: 65vh;
   &::-webkit-scrollbar {
     display: none;
   }
